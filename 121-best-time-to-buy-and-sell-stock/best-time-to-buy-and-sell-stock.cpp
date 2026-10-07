@@ -5,13 +5,13 @@ public:
         int maxProfit = 0;
 
         for (int i = 1; i < prices.size(); i++) {
-            // Calculate profit if we sell today
+            
             int profit = prices[i] - minPrice;
 
-            // Update maximum profit
+            
             maxProfit = max(maxProfit, profit);
 
-            // Update minimum buying price
+           
             minPrice = min(minPrice, prices[i]);
         }
 
